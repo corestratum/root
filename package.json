@@ -1,5 +1,5 @@
 {
-  "name": "@abukix/root",
+  "name": "@corestratum/root",
   "version": "0.1.0",
   "description": "/root — The build guide for basecamp, an open-source unified data + ML + AI platform. Learn end-to-end platform engineering by building the stack that frontier data platforms use, at your own scale.",
   "private": true,

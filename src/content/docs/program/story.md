@@ -272,7 +272,7 @@ current-me can't. I trust future-me to pick.
 The rhythm stays.
 ```
 
-The graduation paragraph is the only one in this document that's allowed to be aspirational at the moment of writing; every other entry is retrospective. It's the closing bracket on the 60-entry monthly retrospective and the 5-entry year-end retrospective, and it's the natural place to link to the [Arc 5 Final Exam](/program/arc-5/final-exam/) result, the published Pattern Paper, and the launched [vantage](https://github.com/abukix/basecamp/blob/main/modules/vantage.md).
+The graduation paragraph is the only one in this document that's allowed to be aspirational at the moment of writing; every other entry is retrospective. It's the closing bracket on the 60-entry monthly retrospective and the 5-entry year-end retrospective, and it's the natural place to link to the [Arc 5 Final Exam](/program/arc-5/final-exam/) result, the published Pattern Paper, and the launched [vantage](https://github.com/corestratum/basecamp/blob/main/modules/vantage.md).
 
 ---
 
@@ -303,7 +303,7 @@ The single test for whether an entry belongs in this doc: would you be embarrass
 - [The Capstone](/program/capstone/): the integrated arc, the spine the per-month entries hang on
 - [AI Learning Protocol](/program/ai-learning-protocol/): the rules for working with Claude/ChatGPT alongside this rhythm
 - [meta/weekly-log-template](/meta/weekly-log-template/): weekly logs are the raw material that feeds this monthly arc
-- [brand/identity](https://github.com/abukix/brand/blob/main/identity.md): the brand frames the rhythm publicly
+- [brand/identity](https://github.com/corestratum/brand/blob/main/identity.md): the brand frames the rhythm publicly
 - [homelab/hardware](https://github.com/abukix/homelab/blob/main/hardware.md): the pre-flight setup that has to land before Phase 1
 - [Arc 1](/program/arc-1/) · [Arc 2](/program/arc-2/) · [Arc 3](/program/arc-3/) · [Arc 4](/program/arc-4/) · [Arc 5](/program/arc-5/): the per-year overviews
 - Year-end retrospective posts on the public blog: the public version of the same story

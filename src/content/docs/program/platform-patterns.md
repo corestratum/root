@@ -66,7 +66,7 @@ Spotify built Backstage internally for years before open-sourcing it in 2020 and
 
 The deeper insight Backstage codified is **platform-as-product**: developer experience is itself a product surface, with users (engineers), a roadmap, SLOs, and a feedback loop.
 
-**basecamp equivalent:** built in Arc 3 Phase 26. [`ascent`](https://github.com/abukix/ascent) is the developer CLI + Workload operator: the paved-road platform contract. Arc 5 Capstone builds [`vantage`](https://github.com/abukix/vantage) as the unified UI surface on top. See [`patterns/infrastructure-and-platform/platform-as-product`](/patterns/infrastructure-and-platform/platform-as-product/) *(ports in v0.3.0)*.
+**basecamp equivalent:** built in Arc 3 Phase 26. [`ascent`](https://github.com/corestratum/ascent) is the developer CLI + Workload operator: the paved-road platform contract. Arc 5 Capstone builds [`vantage`](https://github.com/corestratum/vantage) as the unified UI surface on top. See [`patterns/infrastructure-and-platform/platform-as-product`](/patterns/infrastructure-and-platform/platform-as-product/) *(ports in v0.3.0)*.
 
 ### Multi-cluster GitOps at scale
 
@@ -74,7 +74,7 @@ ArgoCD's ApplicationSet controller and Flux's Kustomization primitives let you d
 
 The pattern below the tools is "Git as the source of truth for desired state, with a reconciler that converges actual to desired." That's the same control-loop pattern Kubernetes itself implements at the workload level; GitOps just lifts it one layer up.
 
-**basecamp equivalent:** [`basecamp`](https://github.com/abukix/basecamp)'s GitOps repo composes the 8 modules via Flux `Kustomization` and `HelmRelease` primitives across the laptop / homelab / cloud deployment recipes. Arc 3 Phase 20 bootstraps Flux; Arc 3 Phase 22 ships `forge` to provision the substrate. See [`patterns/infrastructure-and-platform/gitops`](/patterns/infrastructure-and-platform/gitops/) and [`patterns/foundations/control-loops`](/patterns/foundations/control-loops/) *(patterns port in v0.4.0)*.
+**basecamp equivalent:** [`basecamp`](https://github.com/corestratum/basecamp)'s GitOps repo composes the 8 modules via Flux `Kustomization` and `HelmRelease` primitives across the laptop / homelab / cloud deployment recipes. Arc 3 Phase 20 bootstraps Flux; Arc 3 Phase 22 ships `forge` to provision the substrate. See [`patterns/infrastructure-and-platform/gitops`](/patterns/infrastructure-and-platform/gitops/) and [`patterns/foundations/control-loops`](/patterns/foundations/control-loops/) *(patterns port in v0.4.0)*.
 
 ### Declarative infrastructure (Crossplane + Terraform)
 
@@ -82,7 +82,7 @@ Crossplane is the open-source Kubernetes-native infrastructure primitive layer, 
 
 The interesting tension this pattern surfaces: **imperative provisioning scripts vs declarative reconciliation.** Terraform is technically declarative but shipped as a one-shot apply tool; Crossplane runs the same logic continuously inside a cluster.
 
-**basecamp equivalent:** [`forge`](https://github.com/abukix/forge) covers both: Terraform modules for one shape, Crossplane Compositions for the other. Built Arc 3 Phase 22. See [`patterns/infrastructure-and-platform/declarative-vs-imperative-infrastructure`](/patterns/infrastructure-and-platform/declarative-vs-imperative-infrastructure/) *(ports in v0.3.0)*.
+**basecamp equivalent:** [`forge`](https://github.com/corestratum/forge) covers both: Terraform modules for one shape, Crossplane Compositions for the other. Built Arc 3 Phase 22. See [`patterns/infrastructure-and-platform/declarative-vs-imperative-infrastructure`](/patterns/infrastructure-and-platform/declarative-vs-imperative-infrastructure/) *(ports in v0.3.0)*.
 
 ### Service mesh
 
@@ -106,7 +106,7 @@ Netflix Chaos Monkey is the canonical chaos engineering tool; its philosophy (de
 
 The pattern is **engineered resilience**: assume failure, plan for it, practice for it. DR drills + chaos experiments + backup verification are the routine that prevents the never-tested-recovery-runbook problem.
 
-**basecamp equivalent:** Arc 3 Phase 30 activates the discipline. [`beacon`](https://github.com/abukix/beacon) is the on-call surface that aggregates the alerts these disciplines generate. See `patterns/observability-and-ops/reliability-engineering` *(ports in v0.3.0)*.
+**basecamp equivalent:** Arc 3 Phase 30 activates the discipline. [`beacon`](https://github.com/corestratum/beacon) is the on-call surface that aggregates the alerts these disciplines generate. See `patterns/observability-and-ops/reliability-engineering` *(ports in v0.3.0)*.
 
 ### Lakehouse architecture
 
@@ -114,7 +114,7 @@ Netflix originated Iceberg at scale to escape the limits of Hive's metastore. Ap
 
 The pattern these three formats implement is **snapshot-plus-delta** on top of object storage.
 
-**basecamp equivalent:** [`crag`](https://github.com/abukix/crag): MinIO + Iceberg + Trino + Nessie catalog. Built Arc 4 Phase 31. See [`patterns/storage-and-data/snapshot-plus-delta`](/patterns/storage-and-data/snapshot-plus-delta/) and [`patterns/storage-and-data/oltp-vs-olap`](/patterns/storage-and-data/oltp-vs-olap/) *(patterns port in v0.4.0)*.
+**basecamp equivalent:** [`crag`](https://github.com/corestratum/crag): MinIO + Iceberg + Trino + Nessie catalog. Built Arc 4 Phase 31. See [`patterns/storage-and-data/snapshot-plus-delta`](/patterns/storage-and-data/snapshot-plus-delta/) and [`patterns/storage-and-data/oltp-vs-olap`](/patterns/storage-and-data/oltp-vs-olap/) *(patterns port in v0.4.0)*.
 
 ### Streaming and exactly-once-ish
 
@@ -138,7 +138,7 @@ LiteLLM is the most widely-deployed OSS LLM gateway in 2026. Portkey and Helicon
 
 The pattern is **L7 reverse proxy specialized for LLM traffic**: token-bucket rate limiting, per-tenant + per-model quotas, response caching (exact + semantic), fallback chains, prompt-as-resource, observability for cost + latency + quality.
 
-**basecamp equivalent:** [`prism`](https://github.com/abukix/prism): the homelab-and-small-team-scale LLM gateway. Built Arc 5 Phase 43-46. See `patterns/ml-systems/llm-routing` and `patterns/ml-systems/llm-caching` *(patterns port in v0.4.0)*.
+**basecamp equivalent:** [`prism`](https://github.com/corestratum/prism): the homelab-and-small-team-scale LLM gateway. Built Arc 5 Phase 43-46. See `patterns/ml-systems/llm-routing` and `patterns/ml-systems/llm-caching` *(patterns port in v0.4.0)*.
 
 ### LLM serving + RAG
 
@@ -162,7 +162,7 @@ The Model Context Protocol (MCP), stewarded by Anthropic, is the open standard f
 
 The stabilizing shape is **agent-loop with tool use under guardrails**.
 
-**basecamp equivalent:** [`loom`](https://github.com/abukix/loom): the MCP server fabric. Built Arc 5 Phase 48. Exposes tools to agents (data reads via `crag`, telemetry queries, `ascent` deploy calls) under scoped auth. See `patterns/ml-systems/agent-loop`, `patterns/ml-systems/tool-use`, `patterns/ml-systems/mcp-protocol` *(patterns port in v0.4.0)*.
+**basecamp equivalent:** [`loom`](https://github.com/corestratum/loom): the MCP server fabric. Built Arc 5 Phase 48. Exposes tools to agents (data reads via `crag`, telemetry queries, `ascent` deploy calls) under scoped auth. See `patterns/ml-systems/agent-loop`, `patterns/ml-systems/tool-use`, `patterns/ml-systems/mcp-protocol` *(patterns port in v0.4.0)*.
 
 ### AIOps
 
@@ -170,13 +170,13 @@ New Relic AI and Datadog Watchdog are the proprietary versions of "agent operati
 
 The pattern stabilizing is **agent loop reading platform telemetry, proposing actions, executing through paved-road APIs**.
 
-**basecamp equivalent:** [`warden`](https://github.com/abukix/warden): the AIOps operator. Built Arc 5 Phase 50. Watches `IncidentReport` CRDs; retrieves similar past incidents via RAG over the private ops corpus; proposes runbooks; executes safe actions through `ascent` under human approval gates. See `patterns/ml-systems/agent-loop` *(ports in v0.3.0)*.
+**basecamp equivalent:** [`warden`](https://github.com/corestratum/warden): the AIOps operator. Built Arc 5 Phase 50. Watches `IncidentReport` CRDs; retrieves similar past incidents via RAG over the private ops corpus; proposes runbooks; executes safe actions through `ascent` under human approval gates. See `patterns/ml-systems/agent-loop` *(ports in v0.3.0)*.
 
 ### AI assistant inside the platform UI
 
 Claude Code, Cursor, Devin, and Replit Agent are platform UIs with embedded agents that reason about the platform's state and take actions on the operator's behalf. The shared shape: **command palette as agent surface**.
 
-**basecamp equivalent:** Arc 5 Capstone: [`vantage`](https://github.com/abukix/vantage) exposes a command palette + composition recipes that call `loom`-fabric MCP tools under `warden`-mediated approvals.
+**basecamp equivalent:** Arc 5 Capstone: [`vantage`](https://github.com/corestratum/vantage) exposes a command palette + composition recipes that call `loom`-fabric MCP tools under `warden`-mediated approvals.
 
 ## How to use this doc
 
@@ -250,4 +250,4 @@ That stack reads like an actual platform team's actual platform. Interview-ready
 - [Master Plan](/program/overview/): the program-level context
 - [The Capstone](/program/capstone/): the integrated arc
 - [The Story](/program/story/): the *why* behind /root
-- [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md): the canonical composition contract
+- [`basecamp/ARCHITECTURE.md`](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md): the canonical composition contract

@@ -6,7 +6,7 @@
 
 **Do not open a public issue** for security-relevant problems. Two private paths:
 
-1. **GitHub Private Vulnerability Reporting** *(preferred)*: go to the [Security tab](https://github.com/abukix/root/security) → **Report a vulnerability**. GitHub creates a private advisory thread only maintainers can see.
+1. **GitHub Private Vulnerability Reporting** *(preferred)*: go to the [Security tab](https://github.com/corestratum/root/security) → **Report a vulnerability**. GitHub creates a private advisory thread only maintainers can see.
 2. **Email**: `me@abukix.dev`. PGP / age encryption available on request.
 
 Include:
@@ -27,7 +27,7 @@ Include:
 ## Out of scope
 
 - **Issues in third-party tools the curriculum references**: report upstream (Astro, Kubernetes, etc.).
-- **Vulnerabilities in `basecamp` or its modules**: those live in their own repos ([basecamp](https://github.com/abukix/basecamp), [ascent](https://github.com/abukix/ascent), etc.). Each has its own SECURITY.md; report there.
+- **Vulnerabilities in `basecamp` or its modules**: those live in their own repos ([basecamp](https://github.com/corestratum/basecamp), [ascent](https://github.com/corestratum/ascent), etc.). Each has its own SECURITY.md; report there.
 - **Theoretical concerns about referenced patterns**: academic discussion belongs in GitHub Discussions, not Security Advisories.
 - **Cosmetic issues**: typos, broken links, formatting. Open a regular issue or PR.
 - **Subjective curriculum disagreements**: Discussions topic, not security.
@@ -44,7 +44,7 @@ Solo maintainer; best-effort response within **72 hours** of report. Acknowledgm
 
 `/root` preserves an **honest-evidence** principle. Security advisories are part of that:
 
-- All accepted advisories publish in the repo's [Security Advisories](https://github.com/abukix/root/security/advisories) section after the fix lands.
+- All accepted advisories publish in the repo's [Security Advisories](https://github.com/corestratum/root/security/advisories) section after the fix lands.
 - Credit given to the reporter unless anonymity requested.
 - The CHANGELOG notes the fix under a `### Security` subsection of the relevant release.
 

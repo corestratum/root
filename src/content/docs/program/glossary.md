@@ -12,9 +12,9 @@ tags: [program, glossary, reference]
 
 **Abukix**: The brand the curriculum produces. Named after the author's surname. Single-namespace identity: `abukix.dev` (domain), `abukix-root/` (workspace), `basecamp` (the platform), `vantage` (the unified UI module).
 
-**basecamp**: The K8s-native, open-source unified data + ML + AI platform /root builds across Arc 3-Arc 5. Composed of **8 modules** (`ascent`, `crag`, `vantage`, `beacon`, `forge`, `prism`, `loom`, `warden`) running on a shared substrate (K8s + Flux + Cilium + Postgres + Prometheus/Grafana/Loki/Tempo + Vault). Runs on laptop (`kind`/`k3d`), homelab (K3s), or cloud (managed K8s). See [`abukix/basecamp`](https://github.com/abukix/basecamp).
+**basecamp**: The K8s-native, open-source unified data + ML + AI platform /root builds across Arc 3-Arc 5. Composed of **8 modules** (`ascent`, `crag`, `vantage`, `beacon`, `forge`, `prism`, `loom`, `warden`) running on a shared substrate (K8s + Flux + Cilium + Postgres + Prometheus/Grafana/Loki/Tempo + Vault). Runs on laptop (`kind`/`k3d`), homelab (K3s), or cloud (managed K8s). See [`corestratum/basecamp`](https://github.com/corestratum/basecamp).
 
-**Module (basecamp)**: One of the 8 shipping artifacts that compose into basecamp. Each module has its own repo, release cadence, and blast radius: `ascent` (dev CLI + Workload operator), `crag` (data tier: Iceberg/Trino/MinIO/Spark), `vantage` (unified UI), `beacon` (on-call triage), `forge` (Terraform + Crossplane IaC), `prism` (LLM gateway), `loom` (MCP fabric), `warden` (AIOps operator). See [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md).
+**Module (basecamp)**: One of the 8 shipping artifacts that compose into basecamp. Each module has its own repo, release cadence, and blast radius: `ascent` (dev CLI + Workload operator), `crag` (data tier: Iceberg/Trino/MinIO/Spark), `vantage` (unified UI), `beacon` (on-call triage), `forge` (Terraform + Crossplane IaC), `prism` (LLM gateway), `loom` (MCP fabric), `warden` (AIOps operator). See [`basecamp/ARCHITECTURE.md`](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md).
 
 **Phase**: The unit of /root. ~50 phases total across the 5 arcs. Each phase is self-contained and follows the 8-step pattern-first scaffold (PROBLEM → PRINCIPLES → TRADE-OFFS → TOOLS → MASTERY → COMPARE → OPERATE → CONTRIBUTE). See any phase doc, e.g., [Arc 1 Phase 1](/program/arc-1/phase-1/).
 
@@ -47,7 +47,7 @@ The depth is a property of *operating evidence*, not a label on the entry. A DEE
 
 **Pattern-first**: The framing rule. Every concrete tool sits inside a named pattern; name the pattern before naming the tool. The opposite is *tool-first*, where engineers identify by their tools and re-learn their identity every 5 years.
 
-**Investigation prompts**: Phase docs guide; they don't supply answers. An investigation prompt is a question the phase asks you to investigate yourself ("Walk a Crossplane-driven platform: XRDs reconciled by Compositions"). Claude (and the [root-tutor skill](https://github.com/abukix/root/blob/main/.claude/skills/root-tutor/SKILL.md)) refuses to answer these: guide, not spoon-feed.
+**Investigation prompts**: Phase docs guide; they don't supply answers. An investigation prompt is a question the phase asks you to investigate yourself ("Walk a Crossplane-driven platform: XRDs reconciled by Compositions"). Claude (and the [root-tutor skill](https://github.com/corestratum/root/blob/main/.claude/skills/root-tutor/SKILL.md)) refuses to answer these: guide, not spoon-feed.
 
 ---
 
@@ -119,7 +119,7 @@ The depth is a property of *operating evidence*, not a label on the entry. A DEE
 
 **Frontier-lab**: The generic framing for industry parallels (Anthropic, OpenAI, and the other organizations building frontier AI platforms). Substitutes for any specific company name when describing patterns. Load-bearing framing when a public parallel exists but naming a specific internal product would violate public-safety discipline.
 
-**Platform-as-product**: The discipline that treats the internal platform as a product, developers as customers, developer experience as the unit of work. basecamp's [`ascent`](https://github.com/abukix/ascent) instantiates this at homelab-and-small-team scale. See [pattern](/patterns/infrastructure-and-platform/platform-as-product/).
+**Platform-as-product**: The discipline that treats the internal platform as a product, developers as customers, developer experience as the unit of work. basecamp's [`ascent`](https://github.com/corestratum/ascent) instantiates this at homelab-and-small-team scale. See [pattern](/patterns/infrastructure-and-platform/platform-as-product/).
 
 **The build guide for basecamp**: /root's brand pillar. The one sentence that gates every /root artifact: if it doesn't visibly contribute to *the curriculum*, *building basecamp*, or *the public build-in-public discipline*, it doesn't belong under /root's namespace.
 
@@ -132,5 +132,5 @@ The depth is a property of *operating evidence*, not a label on the entry. A DEE
 - [The Story](/program/story/): narrative + rhythm
 - [Reading list](/program/reading-list/): canonical references for the terms above
 - [Pattern Library](/patterns/): where most of the operational terms originate *(ports in v0.3.0)*
-- [brand/identity](https://github.com/abukix/brand/blob/main/identity.md): Abukix-specific terminology
-- [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md): canonical module boundaries + composition contract
+- [brand/identity](https://github.com/corestratum/brand/blob/main/identity.md): Abukix-specific terminology
+- [`basecamp/ARCHITECTURE.md`](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md): canonical module boundaries + composition contract

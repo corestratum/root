@@ -4,7 +4,7 @@ Thanks for considering a contribution. `/root` is a self-authored curriculum mai
 
 ## The family, in one paragraph
 
-`/root` is the build guide. [`basecamp`](https://github.com/abukix/basecamp) is the platform it produces (8 modules: `ascent`, `crag`, `vantage`, `beacon`, `forge`, `prism`, `loom`, `warden`). Standalone Arc 1 tools ship as `sift` and `pulse`. Each repo has its own CONTRIBUTING; this one covers only `/root` (the curriculum + site).
+`/root` is the build guide. [`basecamp`](https://github.com/corestratum/basecamp) is the platform it produces (8 modules: `ascent`, `crag`, `vantage`, `beacon`, `forge`, `prism`, `loom`, `warden`). Standalone Arc 1 tools ship as `sift` and `pulse`. Each repo has its own CONTRIBUTING; this one covers only `/root` (the curriculum + site).
 
 ## What's welcome
 
@@ -18,7 +18,7 @@ Thanks for considering a contribution. `/root` is a self-authored curriculum mai
 | Suggestions for additional patterns to add to the Pattern Library | **Open an issue first**, don't draft an entry pre-discussion |
 | New phases, new years, scope additions | **Out of scope**: `/root`'s structure is the author's design |
 | Promoting STUB patterns to OUTLINE / DEEP | **Out of scope for external contributors**: DEEP requires operating evidence the author accumulates on `basecamp` |
-| Feature requests for `basecamp` modules | **Wrong repo**: open in the module's own repo (e.g. `github.com/abukix/prism/issues`) |
+| Feature requests for `basecamp` modules | **Wrong repo**: open in the module's own repo (e.g. `github.com/corestratum/prism/issues`) |
 
 When in doubt: open an issue describing the proposed change before opening a PR.
 

@@ -109,7 +109,7 @@ src/content/docs/
 
 Two adjacent Abukix repos referenced by-name from `/root` but sourced independently:
 - **[`homelab`](https://github.com/abukix/homelab)**: hardware (server + dev-machine) + operating notes
-- **[`brand`](https://github.com/abukix/brand)**: voice anchors + typography + colors + wordmark
+- **[`brand`](https://github.com/corestratum/brand)**: voice anchors + typography + colors + wordmark
 
 At v0.1.0 (the initial public release): full Program section (7 docs) + Arc 1 (8 phases + index + final exam) are authored. Everything else (Arc 2-Arc 5 phases, patterns, projects, meta) ports in progressively per [ROADMAP.md](./ROADMAP.md). `homelab` and `brand` ship on their own cadence.
 
@@ -171,12 +171,12 @@ Dark by default. Toggle via `data-theme="light"` on `<html>`. Preference persist
 
 | Repo | Kind | Status | Purpose |
 |---|---|---|---|
-| [`abukix/root`](https://github.com/abukix/root) | Public | Active (v0.1.0) | This repo: curriculum + site |
-| [`abukix/basecamp`](https://github.com/abukix/basecamp) | Public | Active (v0.1.0 design; v0.2.0 code lands Arc 3) | The platform this curriculum produces |
-| `abukix/forge`, `ascent`, `beacon` | Public | Planned (Arc 3) | Infrastructure tier basecamp modules |
-| `abukix/crag` | Public | Planned (Arc 4) | Data tier basecamp module |
-| `abukix/prism`, `loom`, `warden`, `vantage` | Public | Planned (Arc 5) | AI + UI tier basecamp modules |
-| [`abukix/sift`](https://github.com/abukix/sift), [`abukix/pulse`](https://github.com/abukix/pulse) | Public | Planned (Arc 1) | Standalone Arc 1 tools |
+| [`corestratum/root`](https://github.com/corestratum/root) | Public | Active (v0.1.0) | This repo: curriculum + site |
+| [`corestratum/basecamp`](https://github.com/corestratum/basecamp) | Public | Active (v0.1.0 design; v0.2.0 code lands Arc 3) | The platform this curriculum produces |
+| `corestratum/forge`, `ascent`, `beacon` | Public | Planned (Arc 3) | Infrastructure tier basecamp modules |
+| `corestratum/crag` | Public | Planned (Arc 4) | Data tier basecamp module |
+| `corestratum/prism`, `loom`, `warden`, `vantage` | Public | Planned (Arc 5) | AI + UI tier basecamp modules |
+| [`corestratum/sift`](https://github.com/corestratum/sift), [`corestratum/pulse`](https://github.com/corestratum/pulse) | Public | Planned (Arc 1) | Standalone Arc 1 tools |
 | Private ops corpus | Private | Active (Arc 1 onward) | Personal weekly logs, runbooks, postmortems; RAG source for `warden` |
 
 Cross-repo references use full URLs (`github.com/abukix/<name>`). Multi-repo means separate release cadences per module. `/root` doesn't dictate release timing for anything downstream.
@@ -195,7 +195,7 @@ The curriculum's voice is load-bearing, not stylistic:
 - **No emojis** in authored prose
 - **Honest about failure**: postmortems blameless and specific
 
-Full voice rules live in the external [`brand`](https://github.com/abukix/brand) repo (see [`identity.md`](https://github.com/abukix/brand/blob/main/identity.md)). Enforcement is manual: reviewers check every PR against those anchors.
+Full voice rules live in the external [`brand`](https://github.com/corestratum/brand) repo (see [`identity.md`](https://github.com/corestratum/brand/blob/main/identity.md)). Enforcement is manual: reviewers check every PR against those anchors.
 
 ---
 
@@ -225,7 +225,7 @@ Enforcement: the `pre-publish-check` Claude Code skill sweeps the tree before ev
 - `/root` defines *what to learn* and *what to ship* in each phase.
 - `basecamp` is *the thing shipped*: the concrete platform composed of 8 modules.
 - Every phase in `/root` (Arc 3+) maps to a specific `basecamp` version bump.
-- Breaking changes in `/root`'s phase design require rethinking `basecamp` sequencing. See [`basecamp/ROADMAP.md`](https://github.com/abukix/basecamp/blob/main/ROADMAP.md).
+- Breaking changes in `/root`'s phase design require rethinking `basecamp` sequencing. See [`basecamp/ROADMAP.md`](https://github.com/corestratum/basecamp/blob/main/ROADMAP.md).
 
 Neither can ship in isolation. `/root` without `basecamp` is theory; `basecamp` without `/root` is just another platform stack.
 
@@ -238,4 +238,4 @@ Neither can ship in isolation. `/root` without `basecamp` is theory; `basecamp` 
 - [`CHANGELOG.md`](./CHANGELOG.md): what's shipped
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md): how to submit changes
 - [`adrs/`](./adrs/): ratified architectural decisions
-- [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md): the platform this curriculum produces
+- [`basecamp/ARCHITECTURE.md`](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md): the platform this curriculum produces

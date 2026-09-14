@@ -190,5 +190,5 @@ Verdict: SAFE TO PUBLISH / FIX-BEFORE-PUBLISH (N critical findings)
 ## Cross-references
 
 - `CLAUDE.md` (repo root): project-level voice + public-safety rules
-- `github.com/abukix/brand`: voice anchors this check enforces (external, `brand/identity.md`)
+- `github.com/corestratum/brand`: voice anchors this check enforces (external, `brand/identity.md`)
 - `~/.claude/projects/<project-slug>/memory/oss_over_enterprise_preference.md`: related preference (slug is auto-derived from the working directory)

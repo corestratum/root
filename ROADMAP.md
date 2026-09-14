@@ -10,7 +10,7 @@
 
 | `/root` | What ships | Rough target |
 |---|---|---|
-| **v0.1.0** | Initial public release. Site framework (Astro 7 + Tailwind 4), CNCF-graduated discipline layer (GOVERNANCE, MAINTAINERS, ADOPTERS, RELEASING, SUPPORT, CODE_OF_CONDUCT, ARCHITECTURE, ROADMAP, ISSUE_TEMPLATE, NOTICE), docs rendering (`/program/*`), and authored content: 7 Program docs (overview, capstone, story, ai-learning-protocol, platform-patterns, glossary, reading-list) + full Arc 1 (8 phase docs + Arc 1 index + Arc 1 final exam). Adjacent [`homelab`](https://github.com/abukix/homelab) and [`brand`](https://github.com/abukix/brand) repos also ship v0.1.0 concurrent. | **Shipped** (2026-07-09) |
+| **v0.1.0** | Initial public release. Site framework (Astro 7 + Tailwind 4), CNCF-graduated discipline layer (GOVERNANCE, MAINTAINERS, ADOPTERS, RELEASING, SUPPORT, CODE_OF_CONDUCT, ARCHITECTURE, ROADMAP, ISSUE_TEMPLATE, NOTICE), docs rendering (`/program/*`), and authored content: 7 Program docs (overview, capstone, story, ai-learning-protocol, platform-patterns, glossary, reading-list) + full Arc 1 (8 phase docs + Arc 1 index + Arc 1 final exam). Adjacent [`homelab`](https://github.com/abukix/homelab) and [`brand`](https://github.com/corestratum/brand) repos also ship v0.1.0 concurrent. | **Shipped** (2026-07-09) |
 | **v0.2.0** | Arc 2 (8 phase docs + Arc 2 index + Arc 2 final exam). Backend Engineering theme. | ~2026 Q4 |
 | **v0.3.0** | Pattern library shell: `patterns/index.md` + 10 category indexes + first ~15 STUB pattern entries covering the patterns Arc 1-Arc 2 phases reference. | ~2027 Q1 |
 | **v0.4.0** | Arc 3 phases 17-26 (10 docs) + `basecamp v0.2.0-v0.4.0` alignment (Kubernetes + GitOps substrate). First basecamp modules land in this window: `forge` (Arc 3 P22), `ascent` (Arc 3 P26). | ~2027 Q3 |
@@ -126,7 +126,7 @@ Roadmap changes come from:
 
 Roadmap changes get documented as amendments to this file with a date stamp. No silent revisions.
 
-To suggest a roadmap change, open a [GitHub Discussion](https://github.com/abukix/root/discussions) tagged `roadmap`.
+To suggest a roadmap change, open a [GitHub Discussion](https://github.com/corestratum/root/discussions) tagged `roadmap`.
 
 ---
 
@@ -147,4 +147,4 @@ Everything speculative gets an ADR before it lands.
 - [`CHANGELOG.md`](./CHANGELOG.md): what's shipped
 - [`ARCHITECTURE.md`](./ARCHITECTURE.md): how `/root` is structured
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md): how to submit changes
-- [`basecamp/ROADMAP.md`](https://github.com/abukix/basecamp/blob/main/ROADMAP.md): the corresponding platform roadmap
+- [`basecamp/ROADMAP.md`](https://github.com/corestratum/basecamp/blob/main/ROADMAP.md): the corresponding platform roadmap

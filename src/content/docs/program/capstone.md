@@ -75,29 +75,29 @@ Read bottom-up. Each layer stands on the one below it:
 
 | Module | What it is | Repo | Year | Industry parallel |
 |---|---|---|---|---|
-| `forge` | Terraform + Crossplane IaC modules: provisions the substrate | [`abukix/forge`](https://github.com/abukix/forge) | Arc 3 P22 | Cloud IaC platforms (Terraform Cloud, Crossplane-based platforms) |
-| `ascent` | Developer CLI + Workload operator: the deploy path onto basecamp | [`abukix/ascent`](https://github.com/abukix/ascent) | Arc 3 P26 | Internal paved-road platforms (Netflix Titus, Uber Odin, Airbnb OneCard) |
-| `beacon` | On-call triage dashboard | [`abukix/beacon`](https://github.com/abukix/beacon) | Arc 3 P30 | Incident management surfaces (PagerDuty, Grafana OnCall, VictorOps) |
-| `crag` | Data tier: Iceberg + Trino + MinIO + Spark + Flink | [`abukix/crag`](https://github.com/abukix/crag) | Arc 4 P31 | Databricks lakehouse, Snowflake, Netflix's Iceberg-based data tier |
-| `prism` | LLM gateway: routing, caching, observability | [`abukix/prism`](https://github.com/abukix/prism) | Arc 5 P43-46 | LiteLLM, Portkey, OpenAI's internal gateway |
-| `loom` | MCP server fabric: tools for AI agents | [`abukix/loom`](https://github.com/abukix/loom) | Arc 5 P48 | Anthropic's MCP ecosystem, agent tool fabrics at frontier labs |
-| `warden` | AIOps operator: agents that operate basecamp | [`abukix/warden`](https://github.com/abukix/warden) | Arc 5 P50 | Frontier-lab AIOps (self-driving infrastructure at Google, Meta, Uber) |
-| `vantage` | Unified UI dashboard | [`abukix/vantage`](https://github.com/abukix/vantage) | Arc 5 Capstone | Internal platform product UIs (Backstage, Netflix's internal portal) |
+| `forge` | Terraform + Crossplane IaC modules: provisions the substrate | [`corestratum/forge`](https://github.com/corestratum/forge) | Arc 3 P22 | Cloud IaC platforms (Terraform Cloud, Crossplane-based platforms) |
+| `ascent` | Developer CLI + Workload operator: the deploy path onto basecamp | [`corestratum/ascent`](https://github.com/corestratum/ascent) | Arc 3 P26 | Internal paved-road platforms (Netflix Titus, Uber Odin, Airbnb OneCard) |
+| `beacon` | On-call triage dashboard | [`corestratum/beacon`](https://github.com/corestratum/beacon) | Arc 3 P30 | Incident management surfaces (PagerDuty, Grafana OnCall, VictorOps) |
+| `crag` | Data tier: Iceberg + Trino + MinIO + Spark + Flink | [`corestratum/crag`](https://github.com/corestratum/crag) | Arc 4 P31 | Databricks lakehouse, Snowflake, Netflix's Iceberg-based data tier |
+| `prism` | LLM gateway: routing, caching, observability | [`corestratum/prism`](https://github.com/corestratum/prism) | Arc 5 P43-46 | LiteLLM, Portkey, OpenAI's internal gateway |
+| `loom` | MCP server fabric: tools for AI agents | [`corestratum/loom`](https://github.com/corestratum/loom) | Arc 5 P48 | Anthropic's MCP ecosystem, agent tool fabrics at frontier labs |
+| `warden` | AIOps operator: agents that operate basecamp | [`corestratum/warden`](https://github.com/corestratum/warden) | Arc 5 P50 | Frontier-lab AIOps (self-driving infrastructure at Google, Meta, Uber) |
+| `vantage` | Unified UI dashboard | [`corestratum/vantage`](https://github.com/corestratum/vantage) | Arc 5 Capstone | Internal platform product UIs (Backstage, Netflix's internal portal) |
 
 Plus the umbrella:
 
-- **`abukix/basecamp`**: GitOps repo composing the 8 modules; ships pinned versions.
+- **`corestratum/basecamp`**: GitOps repo composing the 8 modules; ships pinned versions.
 
 Plus 2 Arc 1 standalone tools (not part of basecamp itself but part of the program's shipping portfolio):
 
-- **`abukix/sift`** (Arc 1 P2, Python): pattern-first regex CLI. Fluency artifact.
-- **`abukix/pulse`** (Arc 1 P4, Go): network probe scanner emitting Prometheus metrics. Fluency artifact.
+- **`corestratum/sift`** (Arc 1 P2, Python): pattern-first regex CLI. Fluency artifact.
+- **`corestratum/pulse`** (Arc 1 P4, Go): network probe scanner emitting Prometheus metrics. Fluency artifact.
 
 Plus one longitudinal artifact that runs alongside all 5 years and stays private:
 
 - **Private operational corpus**: runbooks, postmortems, ADRs, weekly logs. Built from Arc 1 Phase 1 onward. By end of Arc 5: ~250 weekly logs, ~25 postmortems, ~140 runbooks, ~15+ ADRs. **Always private.** Arc 5 `warden` indexes it as its RAG source, so the same corpus that captures operational memory becomes the intelligence layer of the AIOps operator.
 
-The composition contract, module boundaries, upgrade contract, and design principles all live in [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md). That doc is the canonical source; this doc tells you *when* things get built and *why*.
+The composition contract, module boundaries, upgrade contract, and design principles all live in [`basecamp/ARCHITECTURE.md`](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md). That doc is the canonical source; this doc tells you *when* things get built and *why*.
 
 ---
 
@@ -191,7 +191,7 @@ v1.0.0 is the milestone where basecamp is:
 - **Operating**: the author has run basecamp for 6+ months on their own homelab.
 - **Public**: the repos have been public long enough that external users have started operating them too.
 
-Before v1.0.0, basecamp is a build-in-public project. After v1.0.0, it commits to backwards-compatibility and a real release cadence per [`basecamp/RELEASING.md`](https://github.com/abukix/basecamp/blob/main/RELEASING.md).
+Before v1.0.0, basecamp is a build-in-public project. After v1.0.0, it commits to backwards-compatibility and a real release cadence per [`basecamp/RELEASING.md`](https://github.com/corestratum/basecamp/blob/main/RELEASING.md).
 
 Arc 5 Capstone is paired with the **Pattern Paper**, the synthesis writing artifact. 3,500-5,000 words. Due 4 weeks after the Arc 5 Final Exam. Audience: Staff/Principal-level hiring managers. Reviewed by 2+ external readers before publishing.
 
@@ -201,18 +201,18 @@ Arc 5 Capstone is paired with the **Pattern Paper**, the synthesis writing artif
 
 Short blurbs. Each links to its planned repo.
 
-- **[`sift`](https://github.com/abukix/sift)** (Arc 1 P2, Python): pattern-first regex CLI. Fluency artifact. Not part of basecamp.
-- **[`pulse`](https://github.com/abukix/pulse)** (Arc 1 P4, Go): network probe scanner emitting Prometheus metrics. Fluency artifact. Not part of basecamp, but scraped by basecamp's Prometheus from Arc 3 onward.
-- **[`forge`](https://github.com/abukix/forge)** (Arc 3 P22): Terraform + Crossplane modules provisioning basecamp's substrate. Multi-cloud (laptop + homelab + AWS + GCP).
-- **[`ascent`](https://github.com/abukix/ascent)** (Arc 3 P26): Developer CLI + Workload operator. `ascent-cli` for developers ("ship this thing to basecamp"); `Workload` CRD reconciled by a custom kubebuilder controller into Deployment + Service + Ingress + NetworkPolicy + SLO.
-- **[`beacon`](https://github.com/abukix/beacon)** (Arc 3 P30): on-call triage dashboard. Aggregates alerts + `warden` incident output + `crag` data-quality signals.
-- **[`crag`](https://github.com/abukix/crag)** (Arc 4 P31): data tier. Iceberg on MinIO, Trino for queries, Spark + Flink for processing, Nessie for catalog.
-- **[`prism`](https://github.com/abukix/prism)** (Arc 5 P43-46): LLM gateway. Routes model calls, caches (Redis exact + pgvector semantic), rate limits, observes via OpenLLMetry.
-- **[`loom`](https://github.com/abukix/loom)** (Arc 5 P48): MCP server fabric. Exposes tools to AI agents under scoped auth.
-- **[`warden`](https://github.com/abukix/warden)** (Arc 5 P50): AIOps operator. Triages incidents via RAG over the private ops corpus; proposes runbooks; executes safe actions through `ascent` under approval gates.
-- **[`vantage`](https://github.com/abukix/vantage)** (Arc 5 Capstone): unified UI. Wraps every module's API into one navigable dashboard.
-- **[`basecamp`](https://github.com/abukix/basecamp)**: umbrella repo. Composes the 8 modules; ships pinned versions; defines the composition contract.
-- **[`/root`](https://github.com/abukix/root)**: the curriculum + build guide. This site.
+- **[`sift`](https://github.com/corestratum/sift)** (Arc 1 P2, Python): pattern-first regex CLI. Fluency artifact. Not part of basecamp.
+- **[`pulse`](https://github.com/corestratum/pulse)** (Arc 1 P4, Go): network probe scanner emitting Prometheus metrics. Fluency artifact. Not part of basecamp, but scraped by basecamp's Prometheus from Arc 3 onward.
+- **[`forge`](https://github.com/corestratum/forge)** (Arc 3 P22): Terraform + Crossplane modules provisioning basecamp's substrate. Multi-cloud (laptop + homelab + AWS + GCP).
+- **[`ascent`](https://github.com/corestratum/ascent)** (Arc 3 P26): Developer CLI + Workload operator. `ascent-cli` for developers ("ship this thing to basecamp"); `Workload` CRD reconciled by a custom kubebuilder controller into Deployment + Service + Ingress + NetworkPolicy + SLO.
+- **[`beacon`](https://github.com/corestratum/beacon)** (Arc 3 P30): on-call triage dashboard. Aggregates alerts + `warden` incident output + `crag` data-quality signals.
+- **[`crag`](https://github.com/corestratum/crag)** (Arc 4 P31): data tier. Iceberg on MinIO, Trino for queries, Spark + Flink for processing, Nessie for catalog.
+- **[`prism`](https://github.com/corestratum/prism)** (Arc 5 P43-46): LLM gateway. Routes model calls, caches (Redis exact + pgvector semantic), rate limits, observes via OpenLLMetry.
+- **[`loom`](https://github.com/corestratum/loom)** (Arc 5 P48): MCP server fabric. Exposes tools to AI agents under scoped auth.
+- **[`warden`](https://github.com/corestratum/warden)** (Arc 5 P50): AIOps operator. Triages incidents via RAG over the private ops corpus; proposes runbooks; executes safe actions through `ascent` under approval gates.
+- **[`vantage`](https://github.com/corestratum/vantage)** (Arc 5 Capstone): unified UI. Wraps every module's API into one navigable dashboard.
+- **[`basecamp`](https://github.com/corestratum/basecamp)**: umbrella repo. Composes the 8 modules; ships pinned versions; defines the composition contract.
+- **[`/root`](https://github.com/corestratum/root)**: the curriculum + build guide. This site.
 
 Each one earns its keep: it's not a portfolio tile, it's a load-bearing component that the next module above relies on.
 
@@ -292,4 +292,4 @@ If you're approaching Arc 5: start writing the elevator pitch above as a 60-seco
 
 ---
 
-→ Back to: [The Master Plan](/program/overview/) · [Arc 1](/program/arc-1/) · [basecamp/ARCHITECTURE.md](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md)
+→ Back to: [The Master Plan](/program/overview/) · [Arc 1](/program/arc-1/) · [basecamp/ARCHITECTURE.md](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md)

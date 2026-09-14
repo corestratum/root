@@ -142,12 +142,12 @@ The Astro project structure lands inside the `/root` repo itself (same repo as t
 - [ ] Deploy preview to Cloudflare Pages; iterate
 - [ ] Custom-domain config: `root.abukix.dev` → Cloudflare Pages
 - [ ] Flip GitHub repo from private to public when v0.2.0 ships
-- [ ] Update the [`brand`](https://github.com/abukix/brand) repo's [`identity.md`](https://github.com/abukix/brand/blob/main/identity.md) to reflect visual identity v0 commitment
+- [ ] Update the [`brand`](https://github.com/corestratum/brand) repo's [`identity.md`](https://github.com/corestratum/brand/blob/main/identity.md) to reflect visual identity v0 commitment
 
 ## References
 
 - [ADR-0001](./0001-solo-operator-with-disciplined-review.md): the workflow this site operates under
-- [**`brand/identity.md`**](https://github.com/abukix/brand/blob/main/identity.md): the brand identity this site renders (external repo)
+- [**`brand/identity.md`**](https://github.com/corestratum/brand/blob/main/identity.md): the brand identity this site renders (external repo)
 - [program/ai-learning-protocol.md](../src/content/docs/program/ai-learning-protocol.md): discipline this site visibly enforces
 - Astro 7 docs: https://docs.astro.build/
 - Tailwind 4 docs: https://tailwindcss.com/docs

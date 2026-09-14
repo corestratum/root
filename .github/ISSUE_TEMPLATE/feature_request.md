@@ -28,7 +28,7 @@ assignees: abukix
 - [ ] **New pattern entry**: please discuss here first before drafting
 - [ ] **New phase, new year, or curriculum-structure change**: likely out of scope, but articulate the case
 - [ ] **STUB → OUTLINE or OUTLINE → DEEP promotion**: reserved for maintainer (operating evidence required)
-- [ ] **Suggestion for `basecamp` or a module**: wrong repo; open in `github.com/abukix/basecamp` (or the specific module's repo)
+- [ ] **Suggestion for `basecamp` or a module**: wrong repo; open in `github.com/corestratum/basecamp` (or the specific module's repo)
 
 ## Public-safety flag
 

@@ -10,7 +10,7 @@ _No changes staged yet._
 
 ## [0.1.0] - 2026-07-09
 
-Initial public release of `/root`, **the build guide for [`basecamp`](https://github.com/abukix/basecamp)**, an open-source unified data + ML + AI platform. Ships the site framework, the curriculum-appropriate discipline layer, the docs rendering system, and the **full authored curriculum**: 7 Program docs + 50 phase docs across 5 arcs + 5 arc indexes + 5 arc final exams. 67 markdown files.
+Initial public release of `/root`, **the build guide for [`basecamp`](https://github.com/corestratum/basecamp)**, an open-source unified data + ML + AI platform. Ships the site framework, the curriculum-appropriate discipline layer, the docs rendering system, and the **full authored curriculum**: 7 Program docs + 50 phase docs across 5 arcs + 5 arc indexes + 5 arc final exams. 67 markdown files.
 
 ### Added
 

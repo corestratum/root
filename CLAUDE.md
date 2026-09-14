@@ -1,6 +1,6 @@
 # CLAUDE.md: /root Project Instructions
 
-This is **`/root`**: the build guide for [`basecamp`](https://github.com/abukix/basecamp), an open-source unified data + ML + AI platform. `/root` is the curriculum + design docs; `basecamp` and its 8 modules are the shipped artifacts.
+This is **`/root`**: the build guide for [`basecamp`](https://github.com/corestratum/basecamp), an open-source unified data + ML + AI platform. `/root` is the curriculum + design docs; `basecamp` and its 8 modules are the shipped artifacts.
 
 The instructions below OVERRIDE default Claude behavior in this workspace. Follow them exactly.
 
@@ -54,7 +54,7 @@ chronicle   ← private ops record
 
 ## Voice anchors: DO NOT VIOLATE
 
-These rules carry across every /root file. They're the brand voice, canonically documented in the [`brand`](https://github.com/abukix/brand) repo (see [`identity.md`](https://github.com/abukix/brand/blob/main/identity.md)).
+These rules carry across every /root file. They're the brand voice, canonically documented in the [`brand`](https://github.com/corestratum/brand) repo (see [`identity.md`](https://github.com/corestratum/brand/blob/main/identity.md)).
 
 - **Direct, opinionated, no fluff.** No hedge-words ("might", "perhaps", "you may want to").
 - **Pattern-first.** Every concrete tool sits inside a named pattern. Name the pattern before naming the tool.
@@ -146,5 +146,5 @@ Explicit-spend exceptions the user accepts: Anthropic / OpenAI API keys for `pri
 ## Cross-references
 
 - [`README.md`](README.md): the public pitch
-- [`basecamp`](https://github.com/abukix/basecamp): the platform this curriculum produces
+- [`basecamp`](https://github.com/corestratum/basecamp): the platform this curriculum produces
 - Memory (cross-conversation): `~/.claude/projects/<project-slug>/memory/`

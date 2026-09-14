@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://root.abukix.dev">Website</a>
   ·
-  <a href="https://github.com/abukix/basecamp">basecamp</a>
+  <a href="https://github.com/corestratum/basecamp">basecamp</a>
   ·
   <a href="./CHANGELOG.md">Changelog</a>
   ·
@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version"    src="https://img.shields.io/github/package-json/v/abukix/root?color=a855f7&label=version">
+  <img alt="Version"    src="https://img.shields.io/github/package-json/v/corestratum/root?color=a855f7&label=version">
   <img alt="License"    src="https://img.shields.io/badge/license-Apache_2.0-blue">
   <img alt="Built with" src="https://img.shields.io/badge/built_with-Astro_7-orange">
   <img alt="Status"     src="https://img.shields.io/badge/status-in_active_operation-a855f7">
@@ -33,7 +33,7 @@
 
 `/root` is a self-authored curriculum, published as a public docs site, that walks from Software Engineering Foundations through Backend Engineering, Infrastructure & Platform Engineering, Data Engineering & ML Foundations, and lands at ML Platform / AI Infrastructure Engineer.
 
-**Every phase produces a real thing that ships publicly.** The curriculum's output is [`basecamp`](https://github.com/abukix/basecamp), an open-source unified data + ML + AI platform composed of 8 modules. `/root` is the design and build guide that produces basecamp module by module.
+**Every phase produces a real thing that ships publicly.** The curriculum's output is [`basecamp`](https://github.com/corestratum/basecamp), an open-source unified data + ML + AI platform composed of 8 modules. `/root` is the design and build guide that produces basecamp module by module.
 
 The bet: **great engineers reason in patterns, not tools.** Tools change every few years; patterns don't. `/root` builds the pattern reflex from the first phase, pattern first, tool second, so when the tool changes the reflex still fires.
 
@@ -66,67 +66,67 @@ The bet: **great engineers reason in patterns, not tools.** Tools change every f
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/basecamp.svg" width="48" alt="basecamp"></td>
-    <td><a href="https://github.com/abukix/basecamp"><code>basecamp</code></a></td>
+    <td><a href="https://github.com/corestratum/basecamp"><code>basecamp</code></a></td>
     <td>The platform. Umbrella repo composing the 8 modules below.</td>
     <td>Arc 3 → Arc 5</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/ascent.svg" width="48" alt="ascent"></td>
-    <td><a href="https://github.com/abukix/ascent"><code>ascent</code></a></td>
+    <td><a href="https://github.com/corestratum/ascent"><code>ascent</code></a></td>
     <td>Developer CLI + Workload operator.</td>
     <td>Arc 3 Phase 26</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/crag.svg" width="48" alt="crag"></td>
-    <td><a href="https://github.com/abukix/crag"><code>crag</code></a></td>
+    <td><a href="https://github.com/corestratum/crag"><code>crag</code></a></td>
     <td>Data tier: Iceberg + Trino + MinIO + Spark/Flink.</td>
     <td>Arc 4 Phase 31</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/vantage.svg" width="48" alt="vantage"></td>
-    <td><a href="https://github.com/abukix/vantage"><code>vantage</code></a></td>
+    <td><a href="https://github.com/corestratum/vantage"><code>vantage</code></a></td>
     <td>The unified UI dashboard.</td>
     <td>Arc 5 Capstone</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/beacon.svg" width="48" alt="beacon"></td>
-    <td><a href="https://github.com/abukix/beacon"><code>beacon</code></a></td>
+    <td><a href="https://github.com/corestratum/beacon"><code>beacon</code></a></td>
     <td>On-call triage dashboard.</td>
     <td>Arc 3 Phase 30</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/forge.svg" width="48" alt="forge"></td>
-    <td><a href="https://github.com/abukix/forge"><code>forge</code></a></td>
+    <td><a href="https://github.com/corestratum/forge"><code>forge</code></a></td>
     <td>Terraform + Crossplane infrastructure modules.</td>
     <td>Arc 3 Phase 22</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/prism.svg" width="48" alt="prism"></td>
-    <td><a href="https://github.com/abukix/prism"><code>prism</code></a></td>
+    <td><a href="https://github.com/corestratum/prism"><code>prism</code></a></td>
     <td>LLM gateway: routing, caching, observability.</td>
     <td>Arc 5 Phase 43-46</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/loom.svg" width="48" alt="loom"></td>
-    <td><a href="https://github.com/abukix/loom"><code>loom</code></a></td>
+    <td><a href="https://github.com/corestratum/loom"><code>loom</code></a></td>
     <td>MCP server fabric: tools for AI agents.</td>
     <td>Arc 5 Phase 48</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/warden.svg" width="48" alt="warden"></td>
-    <td><a href="https://github.com/abukix/warden"><code>warden</code></a></td>
+    <td><a href="https://github.com/corestratum/warden"><code>warden</code></a></td>
     <td>AIOps operator: agents that operate basecamp.</td>
     <td>Arc 5 Phase 50</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/sift.svg" width="48" alt="sift"></td>
-    <td><a href="https://github.com/abukix/sift"><code>sift</code></a></td>
+    <td><a href="https://github.com/corestratum/sift"><code>sift</code></a></td>
     <td>Pattern-first regex CLI in Python.</td>
     <td>Arc 1 Phase 2</td>
   </tr>
   <tr>
     <td align="center"><img src="./.github/module-icons/pulse.svg" width="48" alt="pulse"></td>
-    <td><a href="https://github.com/abukix/pulse"><code>pulse</code></a></td>
+    <td><a href="https://github.com/corestratum/pulse"><code>pulse</code></a></td>
     <td>Network probe scanner in Go.</td>
     <td>Arc 1 Phase 4</td>
   </tr>
@@ -170,14 +170,14 @@ Every pattern lives on a depth ladder:
 
 **Adjacent Abukix repos** (referenced by name; shipped on their own cadence):
 - [`homelab`](https://github.com/abukix/homelab): hardware and dev-machine setup
-- [`brand`](https://github.com/abukix/brand): voice anchors, typography, colors, wordmark
+- [`brand`](https://github.com/corestratum/brand): voice anchors, typography, colors, wordmark
 
 Everything above is authored progressively in `/root`. There's no external source. `/root` is the single source of truth for the curriculum and for `basecamp`'s design.
 
 ## Run locally
 
 ```bash
-git clone https://github.com/abukix/root.git
+git clone https://github.com/corestratum/root.git
 cd root
 npm install
 npm run dev
@@ -198,10 +198,10 @@ Requires Node.js ≥ 24.
 
 `/root` is one of several repos under the `abukix` umbrella:
 
-- [**`/root`**](https://github.com/abukix/root) *(you are here)*: the build guide and single source of truth for `basecamp`'s design
-- [**`abukix/basecamp`**](https://github.com/abukix/basecamp): the platform `/root` produces
+- [**`/root`**](https://github.com/corestratum/root) *(you are here)*: the build guide and single source of truth for `basecamp`'s design
+- [**`corestratum/basecamp`**](https://github.com/corestratum/basecamp): the platform `/root` produces
 - **Module repos**: `ascent`, `crag`, `vantage`, `beacon`, `forge`, `prism`, `loom`, `warden` (created as their phase activates)
-- **Standalone tools**: [`sift`](https://github.com/abukix/sift), [`pulse`](https://github.com/abukix/pulse) (Arc 1 learning tools)
+- **Standalone tools**: [`sift`](https://github.com/corestratum/sift), [`pulse`](https://github.com/corestratum/pulse) (Arc 1 learning tools)
 
 ## Voice and authoring
 
@@ -219,8 +219,8 @@ Typo fixes, broken-link repairs, and fact corrections are welcome. Curriculum sc
 
 ## Where to ask
 
-- **Question or discussion**: [GitHub Discussions](https://github.com/abukix/root/discussions)
-- **Bug or broken link**: [GitHub Issues](https://github.com/abukix/root/issues)
+- **Question or discussion**: [GitHub Discussions](https://github.com/corestratum/root/discussions)
+- **Bug or broken link**: [GitHub Issues](https://github.com/corestratum/root/issues)
 - **Security-relevant**: [SECURITY.md](SECURITY.md) (private path; do NOT open a public issue)
 - **Direct**: `me@abukix.dev`
 

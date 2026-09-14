@@ -16,7 +16,7 @@ Treat it as a reference, not a story. Skim to orient, come back to any section d
 
 1. **Pattern-first learning.** Every phase asks you to find the underlying pattern before the tool. Kubernetes is one implementation of "declarative reconciliation," not the only one, not the last one. Terraform, ArgoCD, systemd, thermostats, and PID controllers all implement the same pattern. Being fluent in the *pattern* means you pick up the next tool in a week because you already know what problem it's solving and which trade-offs it must be making. Being fluent in the *tool* means you re-learn everything when the tool changes.
 
-2. **Platform-driven practice.** Theory is verified by operating real software in production-like conditions. You build [`basecamp`](https://github.com/abukix/basecamp), an 8-module K8s-native platform that runs on your laptop, your homelab, or your cloud. Every phase adds something to it or forces you to operate it under a new kind of load. When Phase 20 says "you understand Kubernetes," it means basecamp's K3s cluster (or `kind` on your laptop) has woken you up at 2am with a real incident and you fixed it. Not that you finished a book chapter.
+2. **Platform-driven practice.** Theory is verified by operating real software in production-like conditions. You build [`basecamp`](https://github.com/corestratum/basecamp), an 8-module K8s-native platform that runs on your laptop, your homelab, or your cloud. Every phase adds something to it or forces you to operate it under a new kind of load. When Phase 20 says "you understand Kubernetes," it means basecamp's K3s cluster (or `kind` on your laptop) has woken you up at 2am with a real incident and you fixed it. Not that you finished a book chapter.
 
 3. **Public documentation.** Weekly logs, runbooks, ADRs, postmortems, pattern entries. Not because someone is watching, but because compounding requires written external memory. The engineer who writes down what they learned last month can compose it with what they learn this month. The engineer who doesn't repeats the same reasoning every time. Over five years, that gap is the entire program.
 
@@ -38,7 +38,7 @@ Master Plan is the structural overview. The other docs are the lived experience.
 Every commitment above implies a counter-commitment. Reading the negative space is often clearer than reading the goal:
 
 - **Not a bootcamp.** No compressed timeline, no external instructor, no cohort. The progression is a feature, not a bug. It's the amount of time genuine pattern fluency requires in adult brains with day jobs. Compressing defeats the point.
-- **Not a certification track.** No exam grants /root credit. The 5 final exams inside the program are self-graded scenarios. The credential is [`basecamp`](https://github.com/abukix/basecamp) that runs and the [pattern library](/patterns/) that survives. Nothing external validates you. Your production platform does.
+- **Not a certification track.** No exam grants /root credit. The 5 final exams inside the program are self-graded scenarios. The credential is [`basecamp`](https://github.com/corestratum/basecamp) that runs and the [pattern library](/patterns/) that survives. Nothing external validates you. Your production platform does.
 - **Not a shortcut to senior IC.** Five years is the honest minimum. If you can hit senior-IC comp after two years of directed practice, /root is over-scoped for you. Pick a shorter program. /root is calibrated for engineers whose day job doesn't already exercise these patterns.
 - **Not tied to any specific job or employer.** Everything you build under /root is yours, on your hardware, in your repos. The curriculum survives job changes, unemployment, and relocation. That's the design.
 - **Not a substitute for real ops experience.** It uses homelab operations *as* ops experience. When basecamp pages you at 3am because Postgres ran out of connections, that's an incident. The runbook and postmortem that follow are indistinguishable from a work incident's: same discipline, same artifact quality, same value in a Senior IC interview.
@@ -314,7 +314,7 @@ Where basecamp runs (the "same shape everywhere" promise):
 
 **basecamp does NOT try to be**: a hyperscale platform for petabyte multi-region workloads. Netflix / Uber / Snowflake occupy that space; basecamp deliberately doesn't compete.
 
-See [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/ARCHITECTURE.md) for the canonical composition contract, module boundaries, and design principles. See the [capstone doc](/program/capstone/) for how each phase's shipping artifact plugs into a specific basecamp module.
+See [`basecamp/ARCHITECTURE.md`](https://github.com/corestratum/basecamp/blob/main/ARCHITECTURE.md) for the canonical composition contract, module boundaries, and design principles. See the [capstone doc](/program/capstone/) for how each phase's shipping artifact plugs into a specific basecamp module.
 
 ## The shipping portfolio
 
@@ -322,18 +322,18 @@ See [`basecamp/ARCHITECTURE.md`](https://github.com/abukix/basecamp/blob/main/AR
 
 | Artifact | Repo | First touched | Role |
 |---|---|---|---|
-| `sift` | `abukix/sift` | Arc 1 Phase 2 (Python) | Pattern-first regex CLI; fluency artifact |
-| `pulse` | `abukix/pulse` | Arc 1 Phase 4 (Go) | Network probe scanner emitting Prometheus metrics |
-| `forge` | `abukix/forge` | Arc 3 Phase 22 (IaC) | Terraform + Crossplane modules; provisions the substrate |
-| `ascent` | `abukix/ascent` | Arc 3 Phase 26 (Platform Eng) | Dev CLI + Workload operator; the deploy path onto basecamp |
-| `beacon` | `abukix/beacon` | Arc 3 Phase 30 (Reliability) | On-call triage dashboard |
-| `crag` | `abukix/crag` | Arc 4 Phase 31 (Data) | Data tier: Iceberg + Trino + MinIO + Spark + Flink |
-| `prism` | `abukix/prism` | Arc 5 Phase 43 (LLM Serving) | LLM gateway: routing, caching, observability |
-| `loom` | `abukix/loom` | Arc 5 Phase 48 (Agents + MCP) | MCP server fabric: tools for AI agents |
-| `warden` | `abukix/warden` | Arc 5 Phase 50 (AIOps) | AIOps operator: agents that operate basecamp |
-| `vantage` | `abukix/vantage` | Arc 5 Capstone | Unified UI dashboard |
-| `basecamp` | `abukix/basecamp` | Arc 3 onward | Umbrella repo: composes the 8 modules; ships pinned versions |
-| `/root` | `abukix/root` | Arc 1 Day 1 | The curriculum + build guide (this repo) |
+| `sift` | `corestratum/sift` | Arc 1 Phase 2 (Python) | Pattern-first regex CLI; fluency artifact |
+| `pulse` | `corestratum/pulse` | Arc 1 Phase 4 (Go) | Network probe scanner emitting Prometheus metrics |
+| `forge` | `corestratum/forge` | Arc 3 Phase 22 (IaC) | Terraform + Crossplane modules; provisions the substrate |
+| `ascent` | `corestratum/ascent` | Arc 3 Phase 26 (Platform Eng) | Dev CLI + Workload operator; the deploy path onto basecamp |
+| `beacon` | `corestratum/beacon` | Arc 3 Phase 30 (Reliability) | On-call triage dashboard |
+| `crag` | `corestratum/crag` | Arc 4 Phase 31 (Data) | Data tier: Iceberg + Trino + MinIO + Spark + Flink |
+| `prism` | `corestratum/prism` | Arc 5 Phase 43 (LLM Serving) | LLM gateway: routing, caching, observability |
+| `loom` | `corestratum/loom` | Arc 5 Phase 48 (Agents + MCP) | MCP server fabric: tools for AI agents |
+| `warden` | `corestratum/warden` | Arc 5 Phase 50 (AIOps) | AIOps operator: agents that operate basecamp |
+| `vantage` | `corestratum/vantage` | Arc 5 Capstone | Unified UI dashboard |
+| `basecamp` | `corestratum/basecamp` | Arc 3 onward | Umbrella repo: composes the 8 modules; ships pinned versions |
+| `/root` | `corestratum/root` | Arc 1 Day 1 | The curriculum + build guide (this repo) |
 
 Twelve artifacts, not fewer, not more. Each has a specific purpose in the platform architecture and a specific job in the portfolio. Adding a thirteenth would dilute either the architecture (nothing to plug into) or the portfolio narrative (nothing new to show). Fewer, deeper artifacts beat more, shallower ones. The lesson applies to nearly everything in engineering, and especially to what a senior-IC interviewer wants to see.
 
@@ -361,7 +361,7 @@ The dogfooding rule: if you'd otherwise pay for it, and basecamp can host it, ho
 
 Three tiers, ordered by cost-to-you:
 
-1. **OSS, self-host (free for everyone, free for you)**: `github.com/abukix/basecamp` + the 8 module repos. Clone, run on your laptop / homelab / cloud, follow the README, get an equivalent platform. This is the moat. **99% of users land here.**
+1. **OSS, self-host (free for everyone, free for you)**: `github.com/corestratum/basecamp` + the 8 module repos. Clone, run on your laptop / homelab / cloud, follow the README, get an equivalent platform. This is the moat. **99% of users land here.**
 2. **Hosted demo (free for visitors)**: a public read-only surface with vantage UI + small RAG demo powered by prism + loom + warden. Rate-limited; 10-min session timeout. The cinematic surface: visitors see the platform live without authentication. Hosting platform + cost are deferred decisions.
 3. **Managed offering (deferred, paid)**: only if post-Year-5 launch shows demand. Most successful open-core companies don't launch managed for years.
 

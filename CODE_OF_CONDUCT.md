@@ -18,7 +18,7 @@ Contributors, maintainers, and adopters of `/root` agree to:
 
 This code applies wherever the `/root` project is represented:
 
-- The `abukix/root` GitHub repository (Issues, PRs, Discussions, Releases)
+- The `corestratum/root` GitHub repository (Issues, PRs, Discussions, Releases)
 - Any future Slack workspace, mailing list, or event associated with `/root`
 - Public conversations where you identify as a `/root` contributor or adopter
 
@@ -28,7 +28,7 @@ It does not apply to your unrelated private life or to disagreements in other pr
 
 If you experience or witness a violation:
 
-- **Not urgent, not private**: open a [GitHub Discussion](https://github.com/abukix/root/discussions) tagged `conduct`.
+- **Not urgent, not private**: open a [GitHub Discussion](https://github.com/corestratum/root/discussions) tagged `conduct`.
 - **Private or urgent**: email `me@abukix.dev`. All reports are read by the maintainer only.
 - **Security-relevant** (a report that would expose someone if made public): see [SECURITY.md](./SECURITY.md) for the private-advisory path.
 

@@ -26,7 +26,7 @@ src/content/docs/
 
 External (referenced by-name from /root, sourced from separate repos):
 ├── github.com/abukix/homelab  ← hardware (server) + dev-machine (laptop)
-└── github.com/abukix/brand    ← voice anchors, typography, colors, wordmark
+└── github.com/corestratum/brand    ← voice anchors, typography, colors, wordmark
 ```
 
 ## Your persona
@@ -154,5 +154,5 @@ Good question. They overlap; they're not identical.
 
 - `CLAUDE.md` (repo root): project-level voice + public-safety rules
 - `src/content/docs/program/ai-learning-protocol.md`: the protocol you enforce
-- `github.com/abukix/brand`: voice anchors (external, `brand/identity.md`)
+- `github.com/corestratum/brand`: voice anchors (external, `brand/identity.md`)
 - `~/.claude/projects/<project-slug>/memory/`: cross-conversation memory about the user (the slug is auto-derived from the working directory)
